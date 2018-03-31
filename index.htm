@@ -1,10 +1,161 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+<head>
+    <!-- ref &#243 = o &#250= u &#233= e &#225= a &#237 = i-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+        body {
+            margin: 70px;
+            background-color: white;
+            font-family: "Courier", courier, sans-serif;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        p {
+            padding: 15px;
+            font-size: 20px;
+            border: 2px solid #000000;
+        }
+
+        div {
+            padding:10px;
+        }
+
+        .tab {
+            overflow: hidden;
+            border: 2px solid #000000;
+            background-color: teal;
+        }
+
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+                font-family: "Courier", courier, sans-serif;
+                font-size: 17px;
+            }
+
+                .tab button:hover {
+                    background-color: #EE82EE;
+                    border: 1px solid #000000;
+                }
+
+                .tab button.active {
+                    background-color: #EE82EE;
+                    border: 1px solid #000000;
+                }
+
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 3px solid #000000;
+            border-top: none;
+            line-height: 1.6;
+        }
+    </style>
+
+</head>
+
 <body>
 
-<h1>My First Heading</h1>
+    <h1>Medical Interpreting</h1>
 
-<p>My first paragraph.</p>
+    <p style="border: none;"><font size="6px"><b>Disclaimer</b></font><br><b>This site is for educational purposes only and should not be used for medical advice.</b> </p>
+
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');}</script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Main')" id="defaultOpen"><b>Main Page</b></button>
+        <button class="tablinks" onclick="openTab(event, 'Terms')"><b>Uncommon Medical Terms</b></button>
+        <button class="tablinks" onclick="openTab(event, 'Links')"><b>Useful Links</b></button>
+        <button class="tablinks" onclick="openTab(event, 'Media')"><b>Multimedia Resources</b></button>
+    </div>
+
+    <div id="Main" class="tabcontent">
+
+        <p>
+            Be sure to know how to interpret the names of the common viruses and the large variety of respiratory symptoms they cause.<br><br>
+            Flu - gripe/influenza<br>Respiratory sincytial virus - virus sincitial respiratorio<br>Bronchiolitis - bronquiolitis<br>Rhynovirus- rinovirus<br>Adenovirus - adenovirus<br>
+            Croup - crup<br>Wheezing - silbido<br>Stridor - estridor <br>Dry cough - tos seca<br>Productive cough - tos productiva (commonly called tos con flemas)<br>Crackling - sonido crepitante
+            <br>Shortness of breath - falta de aire<br>Difficulty breathing - dificultad al respirar
+        </p>
+
+        <p>
+            Try to use the same tone as the patient/provider. Tone has a major influence on the meaning of a message and the flow of conversation.
+            A calm statement interpreted with an angry tone by the interpreter can change the course of the encounter for the worst.<br><br>
+            Takeaway: if the patient or provider is angry/sad/worried/bored/excited etc. then carry their tone over into your interpretation.
+            That is the message they want to deliver so its the message that we have to interpret; its not up to us to decide what components the message will have.
+        </p>
+
+        <p>
+            Insurance is unfortunately an enormous part of healthcare in the U.S. so as interpreters we spend a lot of time talking about it.<br>
+            Thankfully there are a few key terms you can learn to make these encounters a bit less exhausting.<br><br>
+            Deductible - deducible <br>Premium - mensualidad <br>Copay - copago <br>Group number - n&#250mero de grupo <br>Policy number- n&#250mero de p&#243liza <br>Claim - reclamo <br>Appeal - apelar v. Apelaci&#243n n
+            <br><br>I say bill as factura by default but sometimes I use bil if the patient seems more comfortable using it.
+        </p>
+
+        <p>NEC stands for necrotizing enterocolitis. In Spanish it is enterocolitis necrotizante.</p>
+
+    </div>
+
+    <div id="Terms" class="tabcontent">
+        <ul>
+            <li>necrotizing enterocolitis - enterocolitis necrotizante</li>
+            <li>Multiple sleep latency test - prueba de latencias del sueo</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div id="Links" class="tabcontent">
+        <p style="border: none;"> <a href="http://www.cchicertification.org//">California Comission for Healthcare Interpreters(CCHI)</a> - interpreter certification & resources </p><br>
+        <p style="border: none;"> <a href="http://www.imiaweb.org/">International Medical Interpreters Association</a> - interpreter certification & resources </p><br>
+        <p style="border: none;"> <a href="https://www.linguee.com/">Linguee</a> - excellent terminology reference</p><br>
+        <p style="border: none;"> <a href="https://medlineplus.gov/">Medline Plus</a> - medical information in Spanish and English </p>
+        <p style="border: none;">
+            Jos&#233 Luis Leyva has a great
+            <a href="https://www.amazon.com/Companion-Book-Translators-Interpreters-English-Spanish/dp/1493528599/ref=la_B0089XSKW0_1_7/144-6159268-2525403?s=books&ie=UTF8&qid=1522175183&sr=1-7">book</a>
+            for those just starting to study EN-ES medical terms.<br> The book has over 1000 of the most frequently used medical terms.
+        </p>
+
+    </div>
+
+    <div id="Media" class="tabcontent">
+        <p>content</p>
+    </div>
+
+    <script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+    </script>
 
 </body>
+
 </html>
