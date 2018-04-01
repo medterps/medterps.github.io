@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- ref &#243 = o &#250= u &#233= e &#225= a &#237 = i-->
+    <!--&#241=ene ref &#243 = o &#250= u &#233= e &#225= a &#237 = i-->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,11 +10,11 @@
         body {
             margin: 70px;
             background-color: white;
-            font-family: "Courier", courier, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         h1 {
-            font-size: 60px;
+            font-size: 90px;
         }
 
         p {
@@ -24,7 +24,7 @@
         }
 
         div {
-            padding:10px;
+            padding: 10px;
         }
 
         .tab {
@@ -41,7 +41,6 @@
                 cursor: pointer;
                 padding: 14px 16px;
                 transition: 0.3s;
-                font-family: "Courier", courier, sans-serif;
                 font-size: 17px;
             }
 
@@ -62,24 +61,46 @@
             border-top: none;
             line-height: 1.6;
         }
+
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+            #myBtn:hover {
+                background-color: limegreen;
+            }
     </style>
 
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <h1>Medical Interpreting</h1>
 
-    <p style="border: none;"><font size="6px"><b>Disclaimer</b></font><br><b>This site is for educational purposes only and should not be used for medical advice.</b> </p>
+    <p style="border: none; padding: 5px;"><font size="6px"><b>Disclaimer</b></font><br><b>This site is for educational purposes only and should not be used for medical advice.</b> </p>
 
     <div id="google_translate_element"></div>
     <script type="text/javascript">
-function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');}</script>
+        function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element'); }</script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'Main')" id="defaultOpen"><b>Main Page</b></button>
-        <button class="tablinks" onclick="openTab(event, 'Terms')"><b>Uncommon Medical Terms</b></button>
+        <button class="tablinks" onclick="openTab(event, 'Terms')"><b>Medical Terms</b></button>
         <button class="tablinks" onclick="openTab(event, 'Links')"><b>Useful Links</b></button>
         <button class="tablinks" onclick="openTab(event, 'Media')"><b>Multimedia Resources</b></button>
     </div>
@@ -109,16 +130,55 @@ function googleTranslateElementInit() {new google.translate.TranslateElement({pa
 
         <p>NEC stands for necrotizing enterocolitis. In Spanish it is enterocolitis necrotizante.</p>
 
+        <p>
+            Natural killer cells are a type of lymphocyte or white blood cell that kills invading organisms such as bacteria, virus, and tumors.<br />
+            There are a few ways to interpret natural killer cells: células asesinas naturales, células asesinas, y a veces células NK (por sus siglas en ingles).
+        </p>
+        <p>
+            Linguee is an excellent site for looking up terms. It is a database of documents that have been translated and when you search a term it shows you the most common translations of the term in the database.<br />
+            It is very spot on, and it tends to give you not only more accurate translations but also a wider variety of possible translations than other dictionary programs.<br />
+            I have it downloaded on my phone and I have the Spanish/English dictionary downloaded for offline use.
+        </p>
+        <p>
+            The heart pumps blood through the left ventricle into the aorta which brings it to the rest of the body. <br />Normally the heart pumps out the majority of the blood in the left ventricle in order to supply oxygen rich blood to the body. When the heart is too rigid to fill fully with blood or too weak or damaged to pump blood the blood flow to the every part of the body is reduced. This is called heart failure, or cardiac insufficiency.<br />
+
+            The amount of blood pushed out or ejected is measured as a percentage called the ejection factor. For example an ejection factor of 75 means that 75 percent of the blood is pumped out of the left ventricle with each beat. An ejection factor of 25 means that only a fourth of the blood is being pumped out. An ejection factor of 50-55 is generally considered borderline, and under 50 heart failure begins.<br />
+
+            In Spanish the terms are fallo cardíaco o insuficiencia cardíaca, and factor de eyección.<br />
+            Ventricle is ventrículo and aorta is the same
+        </p>
+        
+        <p>
+            Methotrexate, vincristine, mercaptopurine, and prednisone are some of the medicines used during the maintenance phase of treatment for acute lymphocytic leukemia (ALL).<br />
+            In Spanish these medicines are metotrexato, vincristina, mercaptopurina, y prednisona. La fase se dice fase de mantenimiento y la enfermedad es leucemia linfocitica aguda.<br />
+            The other phases of treatment for ALL are the initial induction phase, and then the consolidation or intensification phase. These are fase de inducción y fase de consolidación o intensificación respectively.
+        </p>
+
+        <p>
+            If a patient does not understand a question it is not our job to rephrase it. Just interpret their response and the provider will decide how to respond just as they would in an encounter with a patient who shares their language.
+            <br />
+            Plus, our rephrased question may very well not be accurate.
+            <br />
+           If the patient didn't hear you then you can repeat the same question but don't rephrase.
+        </p>
+
+
+        <p>
+
+            Vitreous floaters are clumps of debris in the vitreous fluid inside the eye. The debris clumps together and causes the patient to see spots in their visual field. The spots the patient sees are called opacities.
+            <br />
+            In Spanish vitreous floaters is flotadores vítreos, vitreous liquid is liquido vítreo, and opacity is opacidad.
+        </p>
     </div>
 
     <div id="Terms" class="tabcontent">
         <ul>
-            <li>necrotizing enterocolitis - enterocolitis necrotizante</li>
-            <li>Multiple sleep latency test - prueba de latencias del sueo</li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Necrotizing enterocolitis - Enterocolitis necrotizante</li>
+            <li>Multiple sleep latency test - Prueba de latencias del sue&=241o</li>
+            <li>Vas deferens - Conducto deferente</li>
+            <li>Postural orthostatic tachycardia syndrome - S&#237ndrome de taquicardia postural ortost&#225tica</li>
+            <li>Subarachnoid hemorrhage - Hemorragia subaracnoidea</li>
+            <li>Endoscopic retrogade cholangiopancreatography - Colangiopancreatograf&=237a retr&=243gada endosc&=243pica</li>
         </ul>
     </div>
 
@@ -126,7 +186,8 @@ function googleTranslateElementInit() {new google.translate.TranslateElement({pa
         <p style="border: none;"> <a href="http://www.cchicertification.org//">California Comission for Healthcare Interpreters(CCHI)</a> - interpreter certification & resources </p><br>
         <p style="border: none;"> <a href="http://www.imiaweb.org/">International Medical Interpreters Association</a> - interpreter certification & resources </p><br>
         <p style="border: none;"> <a href="https://www.linguee.com/">Linguee</a> - excellent terminology reference</p><br>
-        <p style="border: none;"> <a href="https://medlineplus.gov/">Medline Plus</a> - medical information in Spanish and English </p>
+        <p style="border: none;"> <a href="https://medlineplus.gov/">Medline Plus</a> - medical information in Spanish and English </p><br />
+        <p style="border: none;"> <a href="https://rarediseases.info.nih.gov/guides/pages/48/medical-and-science-glossaries">NIH medical and science glossaries</a> - a glossary of medical terminology glossaries</p><br>
         <p style="border: none;">
             Jos&#233 Luis Leyva has a great
             <a href="https://www.amazon.com/Companion-Book-Translators-Interpreters-English-Spanish/dp/1493528599/ref=la_B0089XSKW0_1_7/144-6159268-2525403?s=books&ie=UTF8&qid=1522175183&sr=1-7">book</a>
@@ -140,20 +201,38 @@ function googleTranslateElementInit() {new google.translate.TranslateElement({pa
     </div>
 
     <script>
-function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-document.getElementById("defaultOpen").click();
+
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            document.getElementById("defaultOpen").click();
     </script>
 
 </body>
