@@ -23,6 +23,10 @@
             border: 2px solid #000000;
         }
 
+        table{
+            float:right;
+        }
+
         div {
             padding: 10px;
         }
@@ -93,11 +97,13 @@
 
     <p style="border: none; padding: 5px;"><font size="6px"><b>Disclaimer</b></font><br><b>This site is for educational purposes only and should not be used for medical advice.</b> </p>
 
+    <TABLE width="77" border="0" cellspacing="0" cellpadding="0"><TR><TD height="21" width="77"><A target=_blank href=><IMG height="21" width="77" border="0" alt="" src=http://www.imgserver.org/fleshers830/tamales/l.png></A></TD></TR><TR><TD height="15"><A href=http://www.free-counter-plus.com/ target=_blank><IMG border="0" src=http://www.imgserver.org/dowagers~80.gif width="43" alt="www.free-counter-plus.com" height="15"></A><A target=_blank href=http://www.free-counter-plus.com/counter/stats/stats.asp?id =555569872><IMG border="0" height="15" width="34" src=http://www.imgserver.org/lateness-b90.jpg alt=""></A></TD></TR><TR align=Center><TD colspan="2" height="16"></TD></TR></TABLE>
+   
     <div id="google_translate_element"></div>
     <script type="text/javascript">
         function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element'); }</script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+    
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'Main')" id="defaultOpen"><b>Main Page</b></button>
         <button class="tablinks" onclick="openTab(event, 'Terms')"><b>Medical Terms</b></button>
@@ -147,7 +153,7 @@
             In Spanish the terms are fallo cardíaco o insuficiencia cardíaca, and factor de eyección.<br />
             Ventricle is ventrículo and aorta is the same
         </p>
-        
+
         <p>
             Methotrexate, vincristine, mercaptopurine, and prednisone are some of the medicines used during the maintenance phase of treatment for acute lymphocytic leukemia (ALL).<br />
             In Spanish these medicines are metotrexato, vincristina, mercaptopurina, y prednisona. La fase se dice fase de mantenimiento y la enfermedad es leucemia linfocitica aguda.<br />
@@ -159,7 +165,7 @@
             <br />
             Plus, our rephrased question may very well not be accurate.
             <br />
-           If the patient didn't hear you then you can repeat the same question but don't rephrase.
+            If the patient didn't hear you then you can repeat the same question but don't rephrase.
         </p>
 
 
@@ -202,39 +208,40 @@
 
     <script>
 
-            window.onscroll = function () { scrollFunction() };
+        window.onscroll = function () { scrollFunction() };
 
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("myBtn").style.display = "block";
-                } else {
-                    document.getElementById("myBtn").style.display = "none";
-                }
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
             }
+        }
 
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
             }
-
-
-            function openTab(evt, tabName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(tabName).style.display = "block";
-                evt.currentTarget.className += " active";
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
-            document.getElementById("defaultOpen").click();
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
     </script>
 
 </body>
 
 </html>
+
